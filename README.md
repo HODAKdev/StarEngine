@@ -20,6 +20,9 @@ An Advanced C++ DirectX 11 game engine.
 - C++ Language Standard: C++ 2017
 - Configuration: Debug or Release
 - Platform: x64
+## Community
+Discord https://discord.gg/sMYwRaR9FG \
+YouTube https://www.youtube.com/@starengine
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
 assimp https://github.com/assimp/assimp \
