@@ -2,19 +2,18 @@
 ## Introduction
 An Advanced C++ DirectX 11 game engine.
 ## Features
-- Lua scripting
+- Lua Scripting
 - Physics
-- ECS (Entity Component System)
+- Entity Component System
 - UI Editor
-- Panorama .HDRI support
-- Rendering modes (Pointlist, Linelist, Trianglelist)
-- Guizmo
-- Convert text to mesh text (any font)
+- Panorama Sphere Sky (.hdri)
+- Rendering Modes (Pointlist, Linelist, Trianglelist)
+- Guizmo & Object Picking
+- Convert text to mesh text (.ttf)
 - Load mesh model with textures (.obj, .fbx)
-- Splash screen on startup
-- Bounding box & physics collider model visualization
-- Tone mapping (ACES, ...)
-## Build/Install
+- Bounding Box & Physics Collider Model Visualization
+- Tone Mapping
+## Build
 - Visual Studio 2022
 - Windows SDK Version: 10.0 (latest installed version)
 - Platform Toolset: Visual Studio 2022 (v143)
@@ -31,6 +30,8 @@ sol2 https://github.com/ThePhD/sol2 \
 yaml-cpp https://github.com/jbeder/yaml-cpp \
 ttf2mesh https://github.com/fetisov/ttf2mesh \
 ImGuizmo https://github.com/CedricGuillemet/ImGuizmo \
-DirectXTex https://github.com/microsoft/DirectXTex
+DirectXTex https://github.com/microsoft/DirectXTex \
+ACES Filmic https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/ \
+Qwantani (Pure Sky) https://polyhaven.com/a/qwantani_puresky
 ## License
 StarEngine is licensed under the MIT License, see [LICENSE](/LICENSE) for more information.
