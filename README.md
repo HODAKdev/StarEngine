@@ -24,6 +24,7 @@ An Advanced C++ DirectX 11 game engine.
 Discord https://discord.gg/sMYwRaR9FG \
 YouTube https://www.youtube.com/@starengine
 ## Gallery
+![](/images/engine_1.png)
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
 assimp https://github.com/assimp/assimp \
