@@ -1,6 +1,6 @@
 ![](/images/banner_logo.png)
 ## Introduction
-An Advanced C++ DirectX 11 game engine.
+An advanced C++ DirectX 11 game engine.
 ## Features
 - Lua Scripting
 - Physics
