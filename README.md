@@ -1,6 +1,6 @@
 ![](/images/banner_logo.png)
 ## Introduction
-An Advanced C++ DirectX 11 game engine.
+An advanced C++ DirectX 11 game engine.
 ## Features
 - Lua Scripting
 - Physics
@@ -26,6 +26,7 @@ YouTube https://www.youtube.com/@starengine
 ## Gallery
 ![](/images/engine_1.png)
 ![](/images/engine_2.png)
+![](/images/engine_3.png)
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
 assimp https://github.com/assimp/assimp \
@@ -36,6 +37,7 @@ sol2 https://github.com/ThePhD/sol2 \
 yaml-cpp https://github.com/jbeder/yaml-cpp \
 ttf2mesh https://github.com/fetisov/ttf2mesh \
 ImGuizmo https://github.com/CedricGuillemet/ImGuizmo \
+ImGuiWidgets https://github.com/HODAKdev/ImGuiWidgets \
 DirectXTex https://github.com/microsoft/DirectXTex \
 ACES Filmic https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/ \
 Qwantani (Pure Sky) https://polyhaven.com/a/qwantani_puresky
