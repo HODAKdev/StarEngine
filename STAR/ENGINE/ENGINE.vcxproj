@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SRC\MODULE\Module.h" />
+    <ClInclude Include="SRC\SYSTEM\ScriptingSystem.h" />
+    <ClInclude Include="SRC\SYSTEM\ProjectSceneSystem.h" />
+    <ClInclude Include="SRC\SPLASHSCREEN\SplashScreen.h" />
+    <ClInclude Include="SRC\EDITOR\WINDOW\About.h" />
+    <ClInclude Include="SRC\SYSTEM\ModelSystem.h" />
+    <ClInclude Include="SRC\SYSTEM\PhysicsSystem.h" />
+    <ClInclude Include="SRC\ENTITY\COMPONENT\RigidBodyComponent.h" />
+    <ClInclude Include="SRC\EDITOR\WINDOW\Console.h" />
+    <ClInclude Include="SRC\ENTITY\COMPONENT\CameraComponent.h" />
+    <ClInclude Include="SRC\GAME\Game.h" />
+    <ClInclude Include="SRC\MODEL\AssimpLoader.h" />
+    <ClInclude Include="SRC\SKY\Sky.h" />
+    <ClInclude Include="SRC\EDITOR\WINDOW\File.h" />
+    <ClInclude Include="SRC\IMGUIZMO\ImGuizmo.h" />
+    <ClInclude Include="SRC\ENTITY\COMPONENT\MeshComponent.h" />
+    <ClInclude Include="SRC\EDITOR\WINDOW\Inspector.h" />
+    <ClInclude Include="SRC\EDITOR\WINDOW\Hierarchy.h" />
+    <ClInclude Include="SRC\ENTITY\COMPONENT\GeneralComponent.h" />
+    <ClInclude Include="SRC\ENTITY\Entity.h" />
+    <ClInclude Include="SRC\EDITOR\WINDOW\Assets.h" />
+    <ClInclude Include="SRC\EDITOR\Editor.h" />
+    <ClInclude Include="SRC\HELPERS\Helpers.h" />
+    <ClInclude Include="SRC\DX\DX.h" />
+    <ClInclude Include="SRC\ENGINE\Engine.h" />
+    <ClInclude Include="SRC\IMGUI\imconfig.h" />
+    <ClInclude Include="SRC\IMGUI\imgui.h" />
+    <ClInclude Include="SRC\IMGUI\imgui_impl_dx11.h" />
+    <ClInclude Include="SRC\IMGUI\imgui_impl_win32.h" />
+    <ClInclude Include="SRC\IMGUI\imgui_internal.h" />
+    <ClInclude Include="SRC\IMGUI\imgui_stdlib.h" />
+    <ClInclude Include="SRC\IMGUI\imstb_rectpack.h" />
+    <ClInclude Include="SRC\IMGUI\imstb_textedit.h" />
+    <ClInclude Include="SRC\IMGUI\imstb_truetype.h" />
+    <ClInclude Include="SRC\MAIN\Main.h" />
+    <ClInclude Include="SRC\TTF2MESH\ttf2mesh.h" />
+    <ClInclude Include="SRC\XTK\AUDIO\WAVFileReader.h" />
+    <ClInclude Include="SRC\XTK\DDSTextureLoader11.h" />
+    <ClInclude Include="SRC\XTK\MATH\SimpleMath.h" />
+    <ClInclude Include="SRC\XTK\pch.h" />
+    <ClInclude Include="SRC\XTK\TEX\BC.h" />
+    <ClInclude Include="SRC\XTK\TEX\d3dx12.h" />
+    <ClInclude Include="SRC\XTK\TEX\DDS.h" />
+    <ClInclude Include="SRC\XTK\TEX\DirectXTex.h" />
+    <ClInclude Include="SRC\XTK\TEX\DirectXTexP.h" />
+    <ClInclude Include="SRC\XTK\TEX\filters.h" />
+    <ClInclude Include="SRC\XTK\TEX\scoped.h" />
+    <ClInclude Include="SRC\XTK\WICTextureLoader11.h" />
+    <ClInclude Include="SRC\EDITOR\WINDOW\Viewport.h" />
+    <ClInclude Include="SRC\ENTITY\COMPONENT\TransformComponent.h" />
+    <ClInclude Include="SRC\ENTITY\COMPONENT\TextMeshComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SRC\MODULE\Module.cpp" />
+    <ClCompile Include="SRC\SYSTEM\ScriptingSystem.cpp" />
+    <ClCompile Include="SRC\SYSTEM\ProjectSceneSystem.cpp" />
+    <ClCompile Include="SRC\SPLASHSCREEN\SplashScreen.cpp" />
+    <ClCompile Include="SRC\EDITOR\WINDOW\About.cpp" />
+    <ClCompile Include="SRC\SYSTEM\ModelSystem.cpp" />
+    <ClCompile Include="SRC\SYSTEM\PhysicsSystem.cpp" />
+    <ClCompile Include="SRC\ENTITY\COMPONENT\RigidBodyComponent.cpp" />
+    <ClCompile Include="SRC\EDITOR\WINDOW\Console.cpp" />
+    <ClCompile Include="SRC\ENTITY\COMPONENT\CameraComponent.cpp" />
+    <ClCompile Include="SRC\GAME\Game.cpp" />
+    <ClCompile Include="SRC\MODEL\AssimpLoader.cpp" />
+    <ClCompile Include="SRC\SKY\Sky.cpp" />
+    <ClCompile Include="SRC\EDITOR\WINDOW\File.cpp" />
+    <ClCompile Include="SRC\IMGUIZMO\ImGuizmo.cpp" />
+    <ClCompile Include="SRC\ENTITY\COMPONENT\MeshComponent.cpp" />
+    <ClCompile Include="SRC\EDITOR\WINDOW\Inspector.cpp" />
+    <ClCompile Include="SRC\EDITOR\WINDOW\Hierarchy.cpp" />
+    <ClCompile Include="SRC\ENTITY\COMPONENT\GeneralComponent.cpp" />
+    <ClCompile Include="SRC\ENTITY\Entity.cpp" />
+    <ClCompile Include="SRC\EDITOR\WINDOW\Assets.cpp" />
+    <ClCompile Include="SRC\EDITOR\Editor.cpp" />
+    <ClCompile Include="SRC\HELPERS\Helpers.cpp" />
+    <ClCompile Include="SRC\DX\DX.cpp" />
+    <ClCompile Include="SRC\ENGINE\Engine.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui_demo.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui_draw.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui_impl_dx11.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui_impl_win32.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui_stdlib.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui_tables.cpp" />
+    <ClCompile Include="SRC\IMGUI\imgui_widgets.cpp" />
+    <ClCompile Include="SRC\MAIN\Main.cpp" />
+    <ClCompile Include="SRC\TTF2MESH\ttf2mesh.c" />
+    <ClCompile Include="SRC\XTK\AUDIO\WAVFileReader.cpp" />
+    <ClCompile Include="SRC\XTK\DDSTextureLoader11.cpp" />
+    <ClCompile Include="SRC\XTK\MATH\SimpleMath.cpp" />
+    <ClCompile Include="SRC\XTK\pch.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\BC.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\BC4BC5.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\BC6HBC7.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexCompress.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexConvert.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexD3D11.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexD3D12.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexDDS.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexFlipRotate.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexHDR.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexImage.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexMipmaps.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexMisc.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexNormalMaps.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexPMAlpha.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexResize.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexTGA.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexUtil.cpp" />
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexWIC.cpp" />
+    <ClCompile Include="SRC\XTK\WICTextureLoader11.cpp" />
+    <ClCompile Include="SRC\EDITOR\WINDOW\Viewport.cpp" />
+    <ClCompile Include="SRC\ENTITY\COMPONENT\TransformComponent.cpp" />
+    <ClCompile Include="SRC\ENTITY\COMPONENT\TextMeshComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SRC\XTK\MATH\SimpleMath.inl" />
+    <None Include="SRC\XTK\TEX\DirectXTex.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{90a81c2a-bfa2-4dc5-b2e9-650f19b2caec}</ProjectGuid>
+    <RootNamespace>ENGINE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>StarEngine</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\INCLUDE\lua;$(ProjectDir)\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\INCLUDE\lua;$(ProjectDir)\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\DX\STAR\ENGINE\LIB;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

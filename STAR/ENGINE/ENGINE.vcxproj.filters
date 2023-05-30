@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SRC\MAIN\Main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENGINE\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\DX\DX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\HELPERS\Helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\Editor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\AUDIO\WAVFileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\MATH\SimpleMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\TEX\BC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\TEX\d3dx12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\TEX\DDS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\TEX\DirectXTex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\TEX\DirectXTexP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\TEX\filters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\TEX\scoped.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\DDSTextureLoader11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\WICTextureLoader11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imgui_impl_dx11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imgui_impl_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\WINDOW\Assets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\WINDOW\Viewport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENTITY\Entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENTITY\COMPONENT\GeneralComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUI\imgui_stdlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\WINDOW\Hierarchy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENTITY\COMPONENT\TransformComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\WINDOW\Inspector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENTITY\COMPONENT\MeshComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\IMGUIZMO\ImGuizmo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\XTK\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\WINDOW\File.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\SKY\Sky.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\MODEL\AssimpLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\GAME\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENTITY\COMPONENT\CameraComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENTITY\COMPONENT\TextMeshComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\TTF2MESH\ttf2mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\WINDOW\Console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\ENTITY\COMPONENT\RigidBodyComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\SYSTEM\PhysicsSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\SYSTEM\ModelSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\EDITOR\WINDOW\About.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\SPLASHSCREEN\SplashScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\SYSTEM\ProjectSceneSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\SYSTEM\ScriptingSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\MODULE\Module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SRC\MAIN\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENGINE\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\DX\DX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\HELPERS\Helpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\Editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\AUDIO\WAVFileReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\MATH\SimpleMath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\BC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\BC4BC5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\BC6HBC7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexCompress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexConvert.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexD3D11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexD3D12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexDDS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexFlipRotate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexHDR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexImage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexMipmaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexMisc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexNormalMaps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexPMAlpha.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexResize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexTGA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\TEX\DirectXTexWIC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\DDSTextureLoader11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\WICTextureLoader11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\WINDOW\Assets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\WINDOW\Viewport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENTITY\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENTITY\COMPONENT\GeneralComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUI\imgui_stdlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\WINDOW\Hierarchy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENTITY\COMPONENT\TransformComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\WINDOW\Inspector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENTITY\COMPONENT\MeshComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\IMGUIZMO\ImGuizmo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\XTK\pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\WINDOW\File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SKY\Sky.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\MODEL\AssimpLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\GAME\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENTITY\COMPONENT\CameraComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENTITY\COMPONENT\TextMeshComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\TTF2MESH\ttf2mesh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\WINDOW\Console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\ENTITY\COMPONENT\RigidBodyComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SYSTEM\PhysicsSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SYSTEM\ModelSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\EDITOR\WINDOW\About.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SPLASHSCREEN\SplashScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SYSTEM\ProjectSceneSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\SYSTEM\ScriptingSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\MODULE\Module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SRC\XTK\MATH\SimpleMath.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="SRC\XTK\TEX\DirectXTex.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
