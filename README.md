@@ -45,5 +45,6 @@ Qwantani (Pure Sky) https://polyhaven.com/a/qwantani_puresky \
 Font Awesome https://fontawesome.com/ \
 ![](/images/entt.png)
 ![](/images/physx.png)
+![](/images/lua.png)
 ## License
 StarEngine is licensed under the MIT License, see [LICENSE](/LICENSE) for more information.
