@@ -42,6 +42,7 @@ ImGuiWidgets https://github.com/HODAKdev/ImGuiWidgets \
 DirectXTex https://github.com/microsoft/DirectXTex \
 ACES Filmic https://knarkowicz.wordpress.com/2016/01/06/aces-filmic-tone-mapping-curve/ \
 Qwantani (Pure Sky) https://polyhaven.com/a/qwantani_puresky \
-Font Awesome https://fontawesome.com/
+Font Awesome https://fontawesome.com/ \
+![](/images/entt.png)
 ## License
 StarEngine is licensed under the MIT License, see [LICENSE](/LICENSE) for more information.
