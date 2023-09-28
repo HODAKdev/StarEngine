@@ -12,21 +12,12 @@ An Advanced C++ DirectX 11 Game Engine.
 - Text To Mesh Text
 - Mesh Model With Textures
 - Physics Collider Visualization
+- Parent, Child Transformation
 - Async Loading
 - Bounding Box
 - Tone Mapping
 - DLL Plugin Scripting
 - And more...
-## Entity API
-```cpp
-auto entity = ecs->CreateEntity();
-ecs->CreateCubeEntity(entity);
-ecs->GetComponent<TransformComponent>(entity).SetPosition(Vector3(1.0f, 1.0f, 1.0f));
-/* or */
-auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
-transformComponent.SetPosition(Vector3(1.0f, 1.0f, 1.0f));
-
-```
 ## Build
 - Visual Studio 2022
 - Windows SDK Version: 10.0 (latest installed version)
@@ -46,6 +37,15 @@ YouTube https://www.youtube.com/@starengine
 ![](/images/engine_6.png)
 ![](/images/engine_7.png)
 ![](/images/engine_8.png)
+## Entity C++ API
+```cpp
+auto entity = ecs->CreateEntity();
+ecs->CreateCubeEntity(entity);
+ecs->GetComponent<TransformComponent>(entity).SetPosition(Vector3(1.0f, 1.0f, 1.0f));
+/* or */
+auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
+transformComponent.SetPosition(Vector3(1.0f, 1.0f, 1.0f));
+```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
 assimp https://github.com/assimp/assimp \
