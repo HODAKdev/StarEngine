@@ -17,6 +17,16 @@ An Advanced C++ DirectX 11 Game Engine.
 - Tone Mapping
 - DLL Plugin Scripting
 - And more...
+- ## Entity API
+```cpp
+auto entity = ecs->CreateEntity();
+ecs->CreateCubeEntity(entity);
+ecs->GetComponent<TransformComponent>(entity).SetPosition(Vector3(1.0f, 1.0f, 1.0f));
+// or
+auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
+transformComponent.SetPosition(Vector3(1.0f, 1.0f, 1.0f));
+
+```
 ## Build
 - Visual Studio 2022
 - Windows SDK Version: 10.0 (latest installed version)
