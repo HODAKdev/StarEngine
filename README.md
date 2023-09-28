@@ -80,7 +80,7 @@ unsigned char align = textMeshComponent.GetAlign();
 textMeshComponent.SetMeshDepth(float);
 float meshDepth = textMeshComponent.GetMeshDepth();
 textMeshComponent.SetCharSpacing(float);
-float charSpacing = GetCharSpacing();
+float charSpacing = textMeshComponent.GetCharSpacing();
 textMeshComponent.SetLineSpacing(float);
 float lineSpacing = textMeshComponent.GetLineSpacing();
 textMeshComponent.SetWordSpacing(float);
