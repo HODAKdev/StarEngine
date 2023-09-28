@@ -1,6 +1,6 @@
 ![](/images/banner_logo.png)
 ## Introduction
-An advanced C++ DirectX 11 game engine.
+An Advanced C++ DirectX 11 Game Engine.
 ## Features
 - Lua Scripting
 - Physics
@@ -13,6 +13,8 @@ An advanced C++ DirectX 11 game engine.
 - Load mesh model with textures (.obj, .fbx)
 - Bounding Box & Physics Collider Model Visualization
 - Tone Mapping
+- DLL Plugin Scripting
+- And more...
 ## Build
 - Visual Studio 2022
 - Windows SDK Version: 10.0 (latest installed version)
