@@ -9,10 +9,10 @@ An Advanced C++ DirectX 11 Game Engine.
 - Panorama Sphere Sky (HDRI)
 - Rendering Modes (Pointlist, Linelist, Trianglelist)
 - Guizmo & Object Picking
-- Convert text to mesh text
-- Load mesh model with textures
-- Physics collider visualization
-- Async Assets Loading
+- Text To Mesh Text
+- Mesh Model With Textures
+- Physics Collider Visualization
+- Async Loading
 - Bounding Box
 - Tone Mapping
 - DLL Plugin Scripting
