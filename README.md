@@ -6,12 +6,13 @@ An Advanced C++ DirectX 11 Game Engine.
 - Physics
 - Entity Component System
 - UI Editor
-- Panorama Sphere Sky (.hdri)
+- Panorama Sphere Sky
 - Rendering Modes (Pointlist, Linelist, Trianglelist)
 - Guizmo & Object Picking
-- Convert text to mesh text (.ttf)
-- Load mesh model with textures (.obj, .fbx)
-- Bounding Box & Physics Collider Model Visualization
+- Convert text to mesh text
+- Load mesh model with textures
+- Bounding Box
+- Physics collider model visualization
 - Tone Mapping
 - DLL Plugin Scripting
 - And more...
