@@ -11,7 +11,7 @@ An Advanced C++ DirectX 11 Game Engine.
 - Guizmo & Object Picking
 - Convert text to mesh text
 - Load mesh model with textures
-- Physics collider model visualization
+- Physics collider visualization
 - Bounding Box
 - Tone Mapping
 - DLL Plugin Scripting
