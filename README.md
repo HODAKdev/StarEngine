@@ -22,7 +22,7 @@ An Advanced C++ DirectX 11 Game Engine.
 auto entity = ecs->CreateEntity();
 ecs->CreateCubeEntity(entity);
 ecs->GetComponent<TransformComponent>(entity).SetPosition(Vector3(1.0f, 1.0f, 1.0f));
-// or
+/* or */
 auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
 transformComponent.SetPosition(Vector3(1.0f, 1.0f, 1.0f));
 
