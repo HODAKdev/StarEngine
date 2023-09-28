@@ -85,6 +85,31 @@ textMeshComponent.SetLineSpacing(float);
 float lineSpacing = textMeshComponent.GetLineSpacing();
 textMeshComponent.SetWordSpacing(float);
 float wordSpacing = textMeshComponent.GetWordSpacing();
+
+/* TransformComponent */
+auto& transformComponent = ecs->GetComponent<TransformComponent>(entt::entity);
+transformComponent.SetBoundingBox(DirectX::BoundingBox);
+DirectX::BoundingBox boundingBox = transformComponent.GetBoundingBox();
+transformComponent.SetPosition(Vector3);
+transformComponent.SetRotationYawPitchRoll(Vector3);
+transformComponent.SetRotationQuaternion(Quaternion);
+transformComponent.SetScale(Vector3);
+transformComponent.SetTransform(Matrix);
+transformComponent.AddPosition(Vector3);
+transformComponent.AddRotationYawPitchRoll(Vector3);
+transformComponent.AddRotationQuaternion(Quaternion);
+transformComponent.AddScale(Vector3);
+transformComponent.AddTransform(Matrix);
+Vector3 position = transformComponent.GetPosition();
+Vector3 rotationYawPitchRoll = transformComponent.GetRotationYawPitchRoll();
+Quaternion rotationQuaternion = transformComponent.GetRotationQuaternion();
+Vector3 scale = transformComponent.GetScale();
+Matrix matrix = transformComponent.GetTransform();
+Vector3 localPosition = transformComponent.GetLocalPosition();
+Vector3 localRotationYawPitchRoll = transformComponent.GetLocalRotationYawPitchRoll();
+Quaternion localRotationQuaternion = transformComponent.GetLocalRotationQuaternion();
+Vector3 localScale = transformComponent.GetLocalScale();
+Matrix localTransform = transformComponent.GetLocalTransform();
 ```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
