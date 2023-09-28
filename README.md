@@ -45,6 +45,7 @@ YouTube https://www.youtube.com/@starengine
 ![](/images/engine_5.png)
 ![](/images/engine_6.png)
 ![](/images/engine_7.png)
+![](/images/engine_8.png)
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
 assimp https://github.com/assimp/assimp \
