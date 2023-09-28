@@ -17,7 +17,7 @@ An Advanced C++ DirectX 11 Game Engine.
 - Tone Mapping
 - DLL Plugin Scripting
 - And more...
-- ## Entity API
+## Entity API
 ```cpp
 auto entity = ecs->CreateEntity();
 ecs->CreateCubeEntity(entity);
