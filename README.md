@@ -12,6 +12,7 @@ An Advanced C++ DirectX 11 Game Engine.
 - Convert text to mesh text
 - Load mesh model with textures
 - Physics collider visualization
+- Async Assets Loading
 - Bounding Box
 - Tone Mapping
 - DLL Plugin Scripting
