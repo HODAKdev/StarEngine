@@ -39,12 +39,52 @@ YouTube https://www.youtube.com/@starengine
 ![](/images/engine_8.png)
 ## Entity C++ API
 ```cpp
+/* Entity */
 auto entity = ecs->CreateEntity();
-ecs->CreateCubeEntity(entity);
-ecs->GetComponent<TransformComponent>(entity).SetPosition(Vector3(1.0f, 1.0f, 1.0f));
-/* or */
-auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
-transformComponent.SetPosition(Vector3(1.0f, 1.0f, 1.0f));
+ecs->CreateEmptyEntity(entt::entity);
+ecs->CreateCubeEntity(entt::entity);
+ecs->CreateSphereEntity(entt::entity);
+ecs->CreateCapsuleEntity(entt::entity);
+ecs->CreatePlaneEntity(entt::entity);
+ecs->CreateCameraEntity(entt::entity);
+ecs->CreateTextMeshEntity(entt::entity);
+ecs->AddComponent<SomeComponent>(entt::entity);
+auto& someComponent ecs->GetComponent<SomeComponent>(entt::entity);
+if (ecs->HasComponent<SomeComponent>(entt::entity)) {}
+ecs->RemoveComponent<SomeComponent>(entt::entity);
+ecs->SetSelectedEntity(entt::entity);
+auto selectedEntity = ecs->GetSelectedEntity();
+ecs->SetRootEntity(entt::entity);
+auto rootEntity = ecs->GetRootEntity();
+auto registry = ecs->GetRegistry();
+
+/* GeneralComponent */
+auto& generalComponent = ecs->GetComponent<GeneralComponent>(entt::entity);
+generalComponent.SetName(std::string);
+generalComponent.SetTag(std::string);
+generalComponent.SetActive(bool);
+generalComponent.SetStatic(bool);
+generalComponent.AddChild(entt::entity);
+/* not all, add more */
+
+/* TextMeshComponent */
+auto& textMeshComponent = ecs->GetComponent<TextMeshComponent>(entt::entity);
+textMeshComponent.SetText(const char*);
+const char* text = textMeshComponent.GetText();
+textMeshComponent.SetQuality(unsigned char);
+unsigned char quality = textMeshComponent.GetQuality();
+textMeshComponent.SetFont(const char*);
+const char* font = textMeshComponent.GetFont();
+textMeshComponent.SetAlign(unsigned char);
+unsigned char align = textMeshComponent.GetAlign();
+textMeshComponent.SetMeshDepth(float);
+float meshDepth = textMeshComponent.GetMeshDepth();
+textMeshComponent.SetCharSpacing(float);
+float charSpacing = GetCharSpacing();
+textMeshComponent.SetLineSpacing(float);
+float lineSpacing = textMeshComponent.GetLineSpacing();
+textMeshComponent.SetWordSpacing(float);
+float wordSpacing = textMeshComponent.GetWordSpacing();
 ```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
