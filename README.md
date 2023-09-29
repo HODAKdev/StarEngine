@@ -170,6 +170,29 @@ rigidBodyComponent.SetAngularLockY(bool);
 bool angularLockY = rigidBodyComponent.GetAngularLockY();
 rigidBodyComponent.SetAngularLockZ(bool);
 bool angularLockZ = rigidBodyComponent.GetAngularLockZ();
+
+/* MeshComponent */
+auto& meshComponent = ecs->GetComponent<MeshComponent>(entt::entity);
+meshComponent.SetActive(bool);
+bool isActive = meshComponent.IsActive();
+meshComponent.SetupMesh();
+UINT numVertices = meshComponent.GetNumVertices();
+UINT numFaces = meshComponent.GetNumFaces();
+meshComponent.SetFileName(std::string);
+std::string fileName = meshComponent.GetFileName();
+meshComponent.SetMeshName(std::string);
+std::string meshName = meshComponent.GetMeshName();
+meshComponent.AddVertices(Vertex);
+meshComponent.AddIndices(UINT);
+auto vertices = meshComponent.GetVertices();
+auto indices = meshComponent.GetIndices();
+meshComponent.CreateBoundingBox();
+bool state = meshComponent.GetState();
+
+/* Sky */
+SkyFile skyFile;
+skyFile.SetSphereMap(std::string);
+sky->SetSky(skyFile);
 ```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
