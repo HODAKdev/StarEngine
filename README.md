@@ -128,7 +128,7 @@ float far = cameraComponent.GetFar();
 cameraComponent.SetCameraType(unsigned char);
 unsigned char cameraType = cameraComponent.GetCameraType();
 cameraComponent.SetActive(bool);
-bool active = cameraComponent.IsActive();
+bool isActive = cameraComponent.IsActive();
 cameraComponent.SetScale(float);
 float scale = cameraComponent.GetScale();
 cameraComponent.SetAspect(Vector2);
