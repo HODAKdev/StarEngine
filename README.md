@@ -37,7 +37,7 @@ YouTube https://www.youtube.com/@starengine
 ![](/images/engine_6.png)
 ![](/images/engine_7.png)
 ![](/images/engine_8.png)
-## Entity C++ API
+## C++ API
 ```cpp
 /* Entity */
 auto entity = ecs->CreateEntity();
@@ -191,8 +191,12 @@ bool state = meshComponent.GetState();
 
 /* Sky */
 SkyFile skyFile;
-skyFile.SetSphereMap(std::string);
+skyFile.SetSpherePath(std::string);
+skyFile.SetSolidColor(Vector3);
 sky->SetSky(skyFile);
+unsigned char type = skyFile.GetType();
+std::string spherePath = skyFile.GetSpherePath();
+Vector3 solidColor = skyFile.GetSolidColor();
 ```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
