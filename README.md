@@ -71,6 +71,11 @@ bool isStatic = generalComponent.IsStatic();
 generalComponent.AddChild(entt::entity);
 generalComponent.MoveUp();
 generalComponent.MoveDown();
+auto parent = generalComponent.GetParent();
+auto children = generalComponent.GetChildren();
+bool hasChildren = generalComponent.HasChildren();
+generalComponent.Destroy();
+generalComponent.DestroyChildren();
 
 /* TextMeshComponent */
 auto& textMeshComponent = ecs->GetComponent<TextMeshComponent>(entt::entity);
