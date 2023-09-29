@@ -61,10 +61,16 @@ auto registry = ecs->GetRegistry();
 /* GeneralComponent */
 auto& generalComponent = ecs->GetComponent<GeneralComponent>(entt::entity);
 generalComponent.SetName(std::string);
+std::string name = generalComponent.GetName();
 generalComponent.SetTag(std::string);
+std::string tag = generalComponent.GetTag();
 generalComponent.SetActive(bool);
+bool isActive = generalComponent.IsActive();
 generalComponent.SetStatic(bool);
+bool isStatic = generalComponent.IsStatic();
 generalComponent.AddChild(entt::entity);
+generalComponent.MoveUp();
+generalComponent.MoveDown();
 /* not all, add more */
 
 /* TextMeshComponent */
