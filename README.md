@@ -71,7 +71,6 @@ bool isStatic = generalComponent.IsStatic();
 generalComponent.AddChild(entt::entity);
 generalComponent.MoveUp();
 generalComponent.MoveDown();
-/* not all, add more */
 
 /* TextMeshComponent */
 auto& textMeshComponent = ecs->GetComponent<TextMeshComponent>(entt::entity);
@@ -142,7 +141,30 @@ rigidBodyComponent.SetLinearVelocity(Vector3);
 Vector3 linearVelocity = rigidBodyComponent.GetLinearVelocity();
 rigidBodyComponent.SetAngularVelocity(Vector3);
 Vector3 angularVelocity = rigidBodyComponent.GetAngularVelocity();
-/* not all, add more */
+rigidBodyComponent.SetLinearDamping(float);
+float linearDamping = rigidBodyComponent.GetLinearDamping();
+rigidBodyComponent.SetAngularDamping(float);
+float angularDamping = rigidBodyComponent.GetAngularDamping();
+rigidBodyComponent.UseGravity(bool);
+bool hasUseGravity = rigidBodyComponent.HasUseGravity();
+rigidBodyComponent.SetKinematic(bool);
+bool isKinematic = rigidBodyComponent.IsKinematic();
+rigidBodyComponent.AddForce(Vector3);
+rigidBodyComponent.AddTorque(Vector3);
+rigidBodyComponent.ClearForce();
+rigidBodyComponent.ClearTorque();
+rigidBodyComponent.SetLinearLockX(bool);
+bool linearLockX = rigidBodyComponent.GetLinearLockX();
+rigidBodyComponent.SetLinearLockY(bool);
+bool linearLockY = rigidBodyComponent.GetLinearLockY();
+rigidBodyComponent.SetLinearLockZ(bool);
+bool linearLockZ = rigidBodyComponent.GetLinearLockZ();
+rigidBodyComponent.SetAngularLockX(bool);
+bool angularLockX = rigidBodyComponent.GetAngularLockX();
+rigidBodyComponent.SetAngularLockY(bool);
+bool angularLockY = rigidBodyComponent.GetAngularLockY();
+rigidBodyComponent.SetAngularLockZ(bool);
+bool angularLockZ = rigidBodyComponent.GetAngularLockZ();
 ```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
