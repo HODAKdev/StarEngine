@@ -189,6 +189,20 @@ auto indices = meshComponent.GetIndices();
 meshComponent.CreateBoundingBox();
 bool state = meshComponent.GetState();
 
+/* BoxColliderComponent */
+auto physicsComponent = ecs->registry.get<PhysicsComponent>(entt::entity);
+auto boxColliders = physicsComponent.GetBoxColliders();
+boxColliders[0].SetStaticFriction(float);
+float staticFriction = boxColliders[0].GetStaticFriction();
+boxColliders[0].SetDynamicFriction(float);
+float dynamicFriction = boxColliders[0].GetDynamicFriction();
+boxColliders[0].SetRestitution(float);
+float restitution = boxColliders[0].GetRestitution();
+boxColliders[0].SetCenter(Vector3);
+Vector3 center = boxColliders[0].GetCenter();
+boxColliders[0].SetSize(Vector3);
+Vector3 size = boxColliders[0].GetSize();
+
 /* Sky */
 SkyFile skyFile;
 skyFile.SetSpherePath(std::string);
