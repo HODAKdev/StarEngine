@@ -110,6 +110,23 @@ Vector3 localRotationYawPitchRoll = transformComponent.GetLocalRotationYawPitchR
 Quaternion localRotationQuaternion = transformComponent.GetLocalRotationQuaternion();
 Vector3 localScale = transformComponent.GetLocalScale();
 Matrix localTransform = transformComponent.GetLocalTransform();
+
+/* CameraComponent */
+auto& cameraComponent = ecs->GetComponent<CameraComponent>(entt::entity);
+cameraComponent.SetFov(float);
+float fov = cameraComponent.GetFov();
+cameraComponent.SetNear(float);
+float near = cameraComponent.GetNear();
+cameraComponent.SetFar(float);
+float far = cameraComponent.GetFar();
+cameraComponent.SetCameraType(unsigned char);
+unsigned char cameraType = cameraComponent.GetCameraType();
+cameraComponent.SetActive(bool);
+bool active = cameraComponent.IsActive();
+cameraComponent.SetScale(float);
+float scale = cameraComponent.GetScale();
+cameraComponent.SetAspect(Vector2);
+Vector2 aspect = cameraComponent.GetAspect();
 ```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
