@@ -127,6 +127,16 @@ cameraComponent.SetScale(float);
 float scale = cameraComponent.GetScale();
 cameraComponent.SetAspect(Vector2);
 Vector2 aspect = cameraComponent.GetAspect();
+
+/* RigidBodyComponent */
+auto& rigidBodyComponent = ecs->GetComponent<RigidBodyComponent>(entt::entity);
+rigidBodyComponent.SetMass(float);
+float mass = rigidBodyComponent.GetMass();
+rigidBodyComponent.SetLinearVelocity(Vector3);
+Vector3 linearVelocity = rigidBodyComponent.GetLinearVelocity();
+rigidBodyComponent.SetAngularVelocity(Vector3);
+Vector3 angularVelocity = rigidBodyComponent.GetAngularVelocity();
+/* not all, add more */
 ```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
