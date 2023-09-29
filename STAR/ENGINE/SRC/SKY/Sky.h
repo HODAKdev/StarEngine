@@ -45,7 +45,7 @@ public:
 		solidColor = rgb;
 	}
 
-	void SetSphereMap(std::string path)
+	void SetSpherePath(std::string path)
 	{
 		type = SkyType::SkySphereMap;
 		spherePath = path;

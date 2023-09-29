@@ -31,7 +31,7 @@ public:
 	void UseGravity(bool value);
 	bool HasUseGravity();
 	void SetKinematic(bool value);
-	bool GetKinematic();
+	bool IsKinematic();
 	void AddForce(Vector3 value);
 	void AddTorque(Vector3 value);
 	void ClearForce();

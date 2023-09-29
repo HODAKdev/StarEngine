@@ -413,7 +413,7 @@ void ScriptingSystem::lua_add_rigidbody_component()
 	component["SetGravity"] = &RigidBodyComponent::UseGravity;
 	component["GetGravity"] = &RigidBodyComponent::HasUseGravity;
 	component["SetKinematic"] = &RigidBodyComponent::SetKinematic;
-	component["GetKinematic"] = &RigidBodyComponent::GetKinematic;
+	component["IsKinematic"] = &RigidBodyComponent::IsKinematic;
 	component["AddForce"] = &RigidBodyComponent::AddForce;
 	component["AddTorque"] = &RigidBodyComponent::AddTorque;
 	component["ClearForce"] = &RigidBodyComponent::ClearForce;

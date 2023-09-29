@@ -249,7 +249,7 @@ void EngineStart()
     dx->dxDeviceContext->IASetPrimitiveTopology(D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
     SkyFile skyFile;
-    skyFile.SetSphereMap("DATA\\HDRIs\\qwantani_puresky_4k.hdr");
+    skyFile.SetSpherePath("DATA\\HDRIs\\RenderCrate-HDRI_Orbital_14_4K.hdr");
     sky->SetSky(skyFile);
 
     game->InitTime();
@@ -288,6 +288,49 @@ void EngineStart()
     if (!module->Init())
         StarHelpers::AddLog("[Engine] -> Failed to initialize Module System!");
     /* --------------------------- */
+
+    /*
+    unsigned int ii = 16;
+    float xx = 0.0f;
+    float yy = 0.0f;
+    float zz = 0.0f;
+    for (unsigned int aa = 0; aa < ii; aa++)
+    {
+        for (unsigned int bb = 0; bb < ii; bb++)
+        {
+            for (unsigned int cc = 0; cc < ii; cc++)
+            {
+                auto entity = ecs->CreateEntity();
+                ecs->CreateCubeEntity(entity);
+                auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
+                Vector3 cube = transformComponent.GetPosition();
+                transformComponent.SetPosition(Vector3(xx, yy, zz));
+                ecs->AddComponent<RigidBodyComponent>(entity);
+                ecs->GetComponent<RigidBodyComponent>(entity).CreateActor();
+                ecs->GetComponent<PhysicsComponent>(entity).AddBoxCollider();
+
+
+                yy = yy + 2.0f;
+            }
+            xx = xx + 2.0f;
+            yy = 0.0f;
+        }
+        zz = zz + 2.0f;
+        xx = 0.0f;
+    }
+
+    auto entity = ecs->CreateEntity();
+    ecs->CreateCubeEntity(entity);
+    auto& transformComponent = ecs->GetComponent<TransformComponent>(entity);
+    Vector3 cube = transformComponent.GetPosition();
+    transformComponent.SetPosition(Vector3(16.0f, 16.0f, -16.0f));
+    transformComponent.SetScale(Vector3(5.0f, 5.0f, 5.0f));
+    ecs->AddComponent<RigidBodyComponent>(entity);
+    ecs->GetComponent<RigidBodyComponent>(entity).CreateActor();
+    ecs->GetComponent<PhysicsComponent>(entity).AddBoxCollider();
+    ecs->GetComponent<RigidBodyComponent>(entity).AddForce(Vector3(0.0f, 0.0f, 1000.0f));
+    ecs->GetComponent<RigidBodyComponent>(entity).SetMass(100.0f);
+    */
 
     ShowWindow(dx->hwnd, *dx->nCmdShow);
     UpdateWindow(dx->hwnd);

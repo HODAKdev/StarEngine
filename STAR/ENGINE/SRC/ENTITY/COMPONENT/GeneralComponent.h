@@ -28,10 +28,10 @@ public:
 	void SetStatic(bool arg);           /* set static of entity */
 	void AddChild(entt::entity entity); /* add child */
 	void Destroy();                     /* destroy entity & clear cache */
-	void DestroyChild();                /* destroy all entity child & clear cache */
+	void DestroyChildren();             /* destroy all entity child & clear cache */
 
 public:
-	bool IsParent();                         /* return true if has entity any child */
+	bool HasChildren();                      /* return true if has entity any child */
 	std::string GetName();                   /* return entity name */
 	std::string GetTag();                    /* return entity tag */
 	bool IsActive();                         /* return true if entity is active */

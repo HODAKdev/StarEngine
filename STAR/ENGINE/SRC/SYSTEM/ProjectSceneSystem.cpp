@@ -24,7 +24,7 @@ void ProjectSceneSystem::ClearScene()
 {
 	ecs->selected = entt::null;
 	auto& generalComponent = ecs->GetComponent<GeneralComponent>(ecs->root);
-	generalComponent.DestroyChild();
+	generalComponent.DestroyChildren();
 }
 void ProjectSceneSystem::NewScene()
 {

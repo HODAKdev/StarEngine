@@ -23,7 +23,7 @@ float4 main(float4 pos : SV_POSITION, float3 normal : NORMAL, float2 texcoord : 
     float3 result = (ambient + diffuse) * objectColor;
     //return sTexture2D.Sample(sSamplerState, texcoord);
     float3 colx = sTexture2D.Sample(sSamplerState, texcoord);
-    return float4(To_ACES(result.xyz * colx.xyz), 1.0);
-    //return float4(To_ACES(result), 1.0);
+    //return float4(To_ACES(result.xyz * colx.xyz), 1.0);
+    return float4(To_ACES(result), 1.0);
     //return float4(lerp(sTexture2D.Sample(sSamplerState, texcoord).xyz, result, 0.5), 1.0);
 }

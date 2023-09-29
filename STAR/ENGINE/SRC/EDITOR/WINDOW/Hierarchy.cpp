@@ -54,7 +54,7 @@ void HierarchyWindow::RenderTree(entt::entity entity)
 
 	///////////////////////////////////////////////////////////
 
-	if (genComp.IsParent())
+	if (genComp.HasChildren())
 		tree_flags |= ImGuiTreeNodeFlags_Leaf;
 
 	if (ecs->selected == entity)

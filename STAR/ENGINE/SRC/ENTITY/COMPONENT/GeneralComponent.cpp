@@ -96,7 +96,7 @@ std::string GeneralComponent::GetName()
 {
 	return nameEntity;
 }
-bool GeneralComponent::IsParent()
+bool GeneralComponent::HasChildren()
 {
 	if (childrenEntity.empty()) return true; else return false;
 }
@@ -226,7 +226,7 @@ void GeneralComponent::DestroyAll(entt::entity entity)
 		DestroyAll(generalComp.childrenEntity[i]);
 }
 
-void GeneralComponent::DestroyChild()
+void GeneralComponent::DestroyChildren()
 {
 	entt::entity entity = entt::to_entity(ecs->registry, *this);
 	DestroyAll(entity);

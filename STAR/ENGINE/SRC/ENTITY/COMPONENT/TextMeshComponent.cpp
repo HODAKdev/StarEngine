@@ -172,7 +172,7 @@ void TextMeshComponent::Render()
 bool TextMeshComponent::SetupTextMesh()
 {
 	entt::entity entity = entt::to_entity(ecs->registry, *this); /* get this entity */
-	ecs->registry.get<GeneralComponent>(entity).DestroyChild();  /* destroy all child */
+	ecs->registry.get<GeneralComponent>(entity).DestroyChildren();  /* destroy all child */
 
 	offset = ImVec2(NULL, NULL);
 

@@ -55,7 +55,7 @@ void RigidBodyComponent::Render()
 				if (ImGui::Checkbox("##UseGravityRigidBodyComponent", &useGravity))
 					UseGravity(useGravity);
 
-				bool getKinematic = GetKinematic();
+				bool getKinematic = IsKinematic();
 				if (ImGui::Checkbox("##IsKinematicRigidBodyComponent", &getKinematic))
 					SetKinematic(getKinematic);
 
@@ -190,7 +190,7 @@ void RigidBodyComponent::SetKinematic(bool value)
 {
 	pxRigidBody->setRigidBodyFlag(physx::PxRigidBodyFlag::eKINEMATIC, value);
 }
-bool RigidBodyComponent::GetKinematic()
+bool RigidBodyComponent::IsKinematic()
 {
 	return pxRigidBody->getRigidBodyFlags().isSet(physx::PxRigidBodyFlag::eKINEMATIC);
 }
