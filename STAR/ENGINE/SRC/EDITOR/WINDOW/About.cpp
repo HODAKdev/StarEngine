@@ -22,7 +22,7 @@ void AboutWindow::Render()
 	ImGuiStyle* style = &ImGui::GetStyle();
 	ImVec2 windowPadding = style->WindowPadding;
 
-	ImGui::SetNextWindowSize(ImVec2(400, 290));
+	ImGui::SetNextWindowSize(ImVec2(0, 0));
 	ImGui::Begin("About", 0, ImGuiWindowFlags_NoResize 
 		| ImGuiWindowFlags_NoDocking
 		| ImGuiWindowFlags_NoScrollbar
@@ -35,7 +35,8 @@ void AboutWindow::Render()
 			"%s\n"
 			"Copyright(c) 2023 Hodak.\n"
 			"All rights reserved.\n"
-			"https://github.com/HODAKdev/StarEngine",
+			"https://github.com/HODAKdev/StarEngine\n"
+			"StarEngine is licensed under the MIT License.",
 			_VersionText.c_str());
 		ImGui::Text("Used third party software:");
 		ImGui::BeginChild("AboutChild", ImVec2(0, 128));
