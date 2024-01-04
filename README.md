@@ -210,6 +210,10 @@ unsigned char type = skyFile.GetType();
 std::string spherePath = skyFile.GetSpherePath();
 Vector3 solidColor = skyFile.GetSolidColor();
 ```
+## Lua API
+```lua
+-- comming soon
+```
 ## Credits
 Dear ImGui https://github.com/ocornut/imgui \
 assimp https://github.com/assimp/assimp \
