@@ -282,3 +282,22 @@ physx::PxRigidBody* RigidBodyComponent::GetRigidBody()
 {
 	return pxRigidBody;
 }
+
+void RigidBodyComponent::SetPosition(Vector3 xyz)
+{
+	physx::PxTransform tr = pxRigidBody->getGlobalPose();
+	tr.p.x = xyz.x;
+	tr.p.y = xyz.y;
+	tr.p.z = xyz.z;
+	pxRigidBody->setGlobalPose(tr);
+}
+
+void RigidBodyComponent::SetRotation(Quaternion quat)
+{
+	physx::PxTransform tr = pxRigidBody->getGlobalPose();
+	tr.q.x = quat.x;
+	tr.q.y = quat.y;
+	tr.q.z = quat.z;
+	tr.q.w = quat.w;
+	pxRigidBody->setGlobalPose(tr);
+}

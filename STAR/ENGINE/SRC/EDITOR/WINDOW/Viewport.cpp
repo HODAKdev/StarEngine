@@ -4,6 +4,7 @@
 #include "../../HELPERS/Helpers.h"
 #include "../../ENTITY/COMPONENT/GeneralComponent.h"
 #include "../../ENTITY/COMPONENT/CameraComponent.h"
+#include "../../ENTITY/COMPONENT/RigidBodyComponent.h"
 #include "../../GAME/Game.h"
 #include "../../SYSTEM/PhysicsSystem.h"
 
@@ -613,6 +614,13 @@ void ViewportWindow::RenderManipulateWidget(TransformComponent& transformCompone
 	{
 		matrix *= transformComponent.GetParentTransform().Invert();
 		transformComponent.SetTransform(matrix);
+
+		entt::entity entity = entt::to_entity(ecs->registry, transformComponent);
+		if (ecs->HasComponent<RigidBodyComponent>(entity))
+		{
+			auto rigidBodyComponent = ecs->GetComponent<RigidBodyComponent>(entity);
+			rigidBodyComponent.SetTransform(physx::PxTransform(StarHelpers::matrix_to_physics(matrix)));
+		}
 	}
 }
 

@@ -1,6 +1,7 @@
 #include "TransformComponent.h"
 #include "GeneralComponent.h"
 #include "RigidbodyComponent.h"
+#include "../../SYSTEM/PhysicsSystem.h"
 
 static Entity* ecs = &EntityClass();
 static ViewportWindow* viewportWindow = &ViewportClass();
@@ -39,15 +40,42 @@ void TransformComponent::Render()
 			{
 				Vector3 position = localTransform.position;
 				if (ImGui::DragFloat3("##PositionTransformComponent", (float*)&position, viewportWindow->useSnap ? viewportWindow->snap : 0.1f))
+				{
 					SetPosition(position);
+
+					entt::entity entity = entt::to_entity(ecs->registry, *this);
+					if (ecs->HasComponent<RigidBodyComponent>(entity))
+					{
+						auto rigidBodyComponent = ecs->GetComponent<RigidBodyComponent>(entity);
+						rigidBodyComponent.SetPosition(position);
+					}
+				}
 
 				Vector3 rotation = StarHelpers::ToDegrees(localTransform.rotation.ToEuler());
 				if (ImGui::DragFloat3("##RotationTransformComponent", (float*)&rotation, viewportWindow->useSnap ? viewportWindow->snap : 0.1f))
+				{
 					SetRotationYawPitchRoll(StarHelpers::ToRadians(rotation));
+
+					entt::entity entity = entt::to_entity(ecs->registry, *this);
+					if (ecs->HasComponent<RigidBodyComponent>(entity))
+					{
+						auto rigidBodyComponent = ecs->GetComponent<RigidBodyComponent>(entity);
+						rigidBodyComponent.SetRotation(Quaternion::CreateFromYawPitchRoll(StarHelpers::ToRadians(rotation)));
+					}
+				}
 
 				Vector3 scale = localTransform.scale;
 				if (ImGui::DragFloat3("##ScaleTransformComponent", (float*)&scale, viewportWindow->useSnap ? viewportWindow->snap : 0.1f, 0.0f, FLT_MAX))
+				{
 					SetScale(scale);
+
+					auto physicsComponent = ecs->registry.get<PhysicsComponent>(ecs->selected);
+					std::vector<BoxColliderBuffer> vector = physicsComponent.GetBoxColliders();
+					for (int i = 0; i < vector.size(); i++)
+					{
+						vector[i].SetSize(scale);
+					}
+				}
 			}
 			ImGui::PopItemWidth();
 			ImGui::EndTable();

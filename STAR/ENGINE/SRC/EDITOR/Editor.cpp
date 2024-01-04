@@ -100,8 +100,8 @@ void Editor::Shutdown()
 	assetsWindow->Shutdown();
 	viewportWindow->ReleaseBuffer();
 
-	ImGui_ImplWin32_Shutdown();
 	ImGui_ImplDX11_Shutdown();
+	ImGui_ImplWin32_Shutdown();
 	ImGui::DestroyContext();
 }
 

@@ -48,6 +48,8 @@ public:
 	bool GetAngularLockY();
 	void SetAngularLockZ(bool value);
 	bool GetAngularLockZ();
+	void SetPosition(Vector3 xyz);
+	void SetRotation(Quaternion quat);
 
 public:
 	void SetLock(physx::PxRigidDynamicLockFlag::Enum flag, bool value);

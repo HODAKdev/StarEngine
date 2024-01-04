@@ -60,6 +60,8 @@ public:
 	void CreateShape(entt::entity entity);
 	void CreateMaterial();
 
+	Vector3 size = Vector3(1.0f, 1.0f, 1.0f);
+
 private:
 	physx::PxShape* pxShape = NULL;
 	physx::PxMaterial* pxMaterial = NULL;

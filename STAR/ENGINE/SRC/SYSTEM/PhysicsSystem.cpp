@@ -201,9 +201,9 @@ void PhysicsComponent::Render()
 						if (ImGui::DragFloat3("##CenterPhysicsComponent", (float*)&_Center, 0.1f))
 							box_colliders[i].SetCenter(_Center);
 
-						Vector3 _Size = box_colliders[i].GetSize();
+						Vector3 _Size = box_colliders[i].size;
 						if (ImGui::DragFloat3("##Size", (float*)&_Size, 0.1f))
-							box_colliders[i].SetSize(_Size);
+							box_colliders[i].size = _Size;
 					}
 					ImGui::PopItemWidth();
 					ImGui::EndTable();
