@@ -232,4 +232,4 @@ Font Awesome https://fontawesome.com/ \
 ![](/images/physx.png)
 ![](/images/lua.png)
 ## License
-StarEngine is licensed under the MIT License, see [LICENSE](/LICENSE.txt) for more information.
+StarEngine is licensed under the MIT License, see [LICENSE](/LICENSE) for more information.
